@@ -16,7 +16,7 @@ https://www.apache.org/dyn/closer.cgi?path=/kafka/3.1.0/kafka_2.13-3.1.0.tgz
 2. 다음 커맨드를 실행합니다.
 `bin/kafka-server-start.sh config/server.properties` 
 
-기본으로 localhost:9092에 zookeeper가 뜹니다.
+기본으로 localhost:9092에 broker가 뜹니다.
 
 ## Kafka Topics 관련 명렁
 
@@ -31,7 +31,7 @@ bin/kafka-topics.sh --bootstrap-server <zookeeper server 주소> --topic <topic�
 kafka-topics.sh --bootstrap-server localhost:9092 --topic first_topic --create --partitions 3 --replication-factor 1
 ```
 
-zookeeper server 주소 : localhost:9092
+broker server 주소 : localhost:9092
 topic 이름 : first_topic
 parition 개수 : 3
 replication 개수 : 1
